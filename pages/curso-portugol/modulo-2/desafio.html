@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio de Código | EasyDev Academy</title>
+    <link rel="stylesheet" href="../../../css/styles.css" />
+  </head>
+  <body data-mod="portugol-m2" data-page="desafio">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="../../../index.html" class="logo"
+          ><span class="logo-mark">&lt;/&gt;</span><span class="logo-text">EasyDev Academy</span></a
+        >
+        <nav class="main-nav">
+          <a href="../../../index.html#cursos">Cursos</a>
+          <a href="../../../pages/progresso.html">Progresso</a>
+        </nav>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <line id="ham-top" x1="2" y1="5" x2="20" y2="5"/>
+            <line id="ham-mid" x1="2" y1="11" x2="20" y2="11"/>
+            <line id="ham-bot" x1="2" y1="17" x2="20" y2="17"/>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <div class="container crumbs" id="crumbs"></div>
+    <main id="page-root" class="container"></main>
+
+    <footer class="site-footer"><div class="container">© EasyDev Academy</div></footer>
+
+    <script src="../../../js/data.js"></script>
+    <script src="../../../js/data-modulos.js"></script>
+    <script src="../../../js/modulo.js"></script>
+      <script>
+      (function(){
+        var btn = document.getElementById('nav-toggle');
+        var nav = document.querySelector('.main-nav');
+        if(!btn||!nav) return;
+        btn.addEventListener('click', function(){
+          var open = nav.classList.toggle('open');
+          btn.setAttribute('aria-expanded', open);
+        });
+        // Close on link click
+        nav.querySelectorAll('a').forEach(function(a){
+          a.addEventListener('click', function(){ nav.classList.remove('open'); btn.setAttribute('aria-expanded','false'); });
+        });
+        // Close on outside click
+        document.addEventListener('click', function(e){
+          if(!btn.contains(e.target) && !nav.contains(e.target)){
+            nav.classList.remove('open');
+            btn.setAttribute('aria-expanded','false');
+          }
+        });
+      })();
+    </script>
+  </body>
+</html>

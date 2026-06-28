@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EasyDev Academy — Curso gratuito de lógica de programação</title>
+    <meta
+      name="description"
+      content="Curso gratuito de programação do zero com Portugol Studio. Aprenda lógica e algoritmos de forma simples."
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Cabeçalho global -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="logo">
+          <span class="logo-mark">&lt;/&gt;</span>
+          <span class="logo-text">EasyDev Academy</span>
+        </a>
+        <nav class="main-nav">
+          <a href="index.html#cursos">Cursos</a>
+          <a href="index.html#sobre">Sobre</a>
+          <a href="pages/progresso.html">Progresso</a>
+          <a href="index.html#feedbacks">Feedback</a>
+        </nav>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <line id="ham-top" x1="2" y1="5" x2="20" y2="5"/>
+            <line id="ham-mid" x1="2" y1="11" x2="20" y2="11"/>
+            <line id="ham-bot" x1="2" y1="17" x2="20" y2="17"/>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <h1>EasyDev Academy — aprenda programação do zero ao mercado</h1>
+        <p class="hero-sub">Trilhas gratuitas: comece pelo Portugol Studio e evolua para Python.</p>
+        <a href="#cursos" class="btn btn-primary">Ver cursos</a>
+      </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre" class="section">
+      <div class="container">
+        <h2>Sobre a EasyDev Academy</h2>
+        <p class="section-lead">
+          A EasyDev Academy é uma plataforma educacional criada para ensinar programação do zero ao avançado, por meio
+          de uma trilha de aprendizado clara, estruturada e progressiva.
+        </p>
+        <div class="grid-3">
+          <div class="card">
+            <h3>Nosso propósito</h3>
+            <p>
+              Tornar a programação acessível a qualquer pessoa, construindo uma base sólida de lógica antes de avançar
+              para linguagens utilizadas no mercado de trabalho.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Para quem é</h3>
+            <p>
+              Para iniciantes, estudantes e profissionais em transição que nunca programaram e desejam aprender de forma
+              guiada, sem pular etapas e sem se sentir perdido.
+            </p>
+          </div>
+          <div class="card">
+            <h3>O que você vai aprender</h3>
+            <p>
+              Lógica de programação, algoritmos, variáveis, estruturas de controle, dados, funções e projetos práticos —
+              começando pelo Portugol Studio e evoluindo para Python.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Como os cursos são organizados</h3>
+            <p>
+              Cada curso é dividido em <strong>módulos</strong>, e cada módulo em <strong>aulas</strong> curtas com
+              vídeo, conteúdo escrito, questionários e desafios práticos para fixar o aprendizado.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Aprendizado guiado</h3>
+            <p>
+              A trilha foi pensada em ordem: cada aula prepara a próxima. Você avança no seu ritmo, com questionários
+              que ajudam a revisar e identificar o que ainda precisa estudar.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Do básico ao mercado</h3>
+            <p>
+              Após dominar a lógica com Portugol Studio, você está pronto para o curso de Python e para encarar novas
+              linguagens com segurança e autonomia.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feedbacks -->
+    <section id="feedbacks" class="section">
+      <div class="container">
+        <h2>Feedbacks</h2>
+        <p class="section-lead">
+          Sua opinião ajuda a EasyDev Academy a evoluir. Envie sugestões, críticas e ideias de melhoria para
+          tornarmos a plataforma cada vez melhor para quem está aprendendo a programar.
+        </p>
+        <p style="text-align:center; margin-top: 24px;">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdc2TYr_8gO9U7fJ5aROuHUqZvbOkd8M_Its2QLb3gcZ8vX5A/viewform?usp=publish-editor" target="_blank" rel="noopener" class="btn btn-primary">
+            Enviar feedback
+          </a>
+        </p>
+      </div>
+    </section>
+
+    <!-- Cursos -->
+    <section id="cursos" class="section section-alt">
+      <div class="container">
+        <h2>Nossos cursos</h2>
+        <p class="section-lead">Cada curso é uma trilha completa, organizada em módulos e aulas.</p>
+        <div class="modules-grid" id="courses-grid"><!-- preenchido via JS --></div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> EasyDev Academy — MVP educacional.</p>
+      </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/home.js"></script>
+      <script>
+      (function(){
+        var btn = document.getElementById('nav-toggle');
+        var nav = document.querySelector('.main-nav');
+        if(!btn||!nav) return;
+        btn.addEventListener('click', function(){
+          var open = nav.classList.toggle('open');
+          btn.setAttribute('aria-expanded', open);
+        });
+        // Close on link click
+        nav.querySelectorAll('a').forEach(function(a){
+          a.addEventListener('click', function(){ nav.classList.remove('open'); btn.setAttribute('aria-expanded','false'); });
+        });
+        // Close on outside click
+        document.addEventListener('click', function(e){
+          if(!btn.contains(e.target) && !nav.contains(e.target)){
+            nav.classList.remove('open');
+            btn.setAttribute('aria-expanded','false');
+          }
+        });
+      })();
+    </script>
+  </body>
+</html>
