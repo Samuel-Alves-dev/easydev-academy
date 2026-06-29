@@ -9,7 +9,7 @@
 <br /><br />
 
 <!-- Banner do projeto — substitua pelo banner real -->
-<img src="./assets/banner.png" alt="EasyDev Academy" width="100%" />
+<img src="./assets/images/logo-EasyDev.jpeg" alt="EasyDev Academy" width="500" />
 
 <br />
 
@@ -89,13 +89,11 @@ A plataforma oferece cursos estruturados em módulos, com aulas, vídeos, explic
 
 ## 🎬 Demonstração
 
-> _Adicione abaixo screenshots ou GIFs da plataforma em uso._
-
 <div align="center">
 
-| Página Inicial | Aula | Questionário |
+| Página Inicial | Cursos | Aula |
 |:---:|:---:|:---:|
-| <img src="./assets/screenshot-home.png" width="280" alt="Página Inicial" /> | <img src="./assets/screenshot-aula.png" width="280" alt="Aula" /> | <img src="./assets/screenshot-quiz.png" width="280" alt="Quiz" /> |
+| <img src="./assets/images/home-page.png" width="400" alt="Página Inicial" /> | <img src="./assets/images/course-list.png" width="400" alt="Aula" /> | <img src="./assets/images/lesson-page.png" width="400" alt="Quiz" /> |
 
 </div>
 
@@ -126,7 +124,7 @@ A EasyDev Academy está disponível online e pode ser utilizada diretamente pelo
 <div align="center">
 
 <!-- Substitua # pelo link real do GitHub Pages -->
-[![Acessar EasyDev Academy](https://img.shields.io/badge/Acessar%20a%20Plataforma-4f46e5?style=for-the-badge&logo=googlechrome&logoColor=white)](#)
+[![Acessar EasyDev Academy](https://img.shields.io/badge/Acessar%20a%20Plataforma-4f46e5?style=for-the-badge&logo=googlechrome&logoColor=white)](https://samuel-alves-dev.github.io/easydev-academy/index.html)
 
 </div>
 
@@ -191,13 +189,14 @@ Essa estrutura foi criada para que cada módulo seja completo por si só, permit
 **Samuel Alves**
 
 Desenvolvedor e criador da iniciativa **Samuel EasyDev** —  
-onde compartilho projetos, estudos e conteúdos sobre programação e tecnologia.
+onde ensino programação de forma simples e rápida.
 
 <br />
 
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/seu-usuario)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/seu-perfil)
-[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/seu-perfil)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Samuel-Alves-dev)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/samuel-alves-a986813ba?utm_source=share_via&utm_content=profile&utm_medium=member_android)
+[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtube.com/@SamuelEasyDev)
+[![TikTok](https://img.shields.io/badge/TikTok-000000?style=for-the-badge&logo=tiktok&logoColor=white)](https://www.tiktok.com/@Samuel.EasyDev)
 
 </div>
 
@@ -205,7 +204,7 @@ onde compartilho projetos, estudos e conteúdos sobre programação e tecnologia
 
 <div align="center">
 
-Desenvolvido por **Samuel Alves** · Iniciativa [Samuel EasyDev](https://github.com/seu-usuario)
+Desenvolvido por **Samuel Alves** · Iniciativa [Samuel EasyDev](https://youtube.com/@SamuelEasyDev)
 
 Se a plataforma foi útil para você, deixe uma ⭐ no repositório — isso ajuda o projeto a crescer!
 
